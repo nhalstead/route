@@ -9,7 +9,7 @@ $route->add('/', function() {
 });
 
 $route->add('/name', function() {
-	echo 'Name Home';
+	echo 'Name';
 });
 
 $route->add('/name/.+', function($name) {
