@@ -4,6 +4,7 @@ require_once 'route.php';
 
 $route = new Route();
 
+$route->add('setup', "setup");
 $route->add('/', function() {
 	echo 'HOME';
 });
@@ -23,3 +24,9 @@ $route->add('/this/is/the/.+/story/of/.+', function($first, $second) {
 
 
 $route->listen();
+
+function setup(){
+	echo "Setup not Listed.";
+}
+
+?>
